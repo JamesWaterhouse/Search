@@ -11,6 +11,8 @@ $arr1 = [1,5,34,54,78,562,655,864,6543,6632,7777,7778,46266,24562];
 
         $start = 0;
         $end = count($array) ;
+
+        sort($array);
        
         while ($start <= $end) {
             $position = floor(($end + $start) / 2);
@@ -25,7 +27,7 @@ $arr1 = [1,5,34,54,78,562,655,864,6543,6632,7777,7778,46266,24562];
     }
 
     echo'<br>';
-    echo(findBinary(1, $arr1));
+    echo(findBinary(46266, $arr1));
     echo'<br>';
     
  $after = microtime(true);
